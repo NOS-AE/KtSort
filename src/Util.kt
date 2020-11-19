@@ -1,7 +1,7 @@
 package sort
 
-fun <T> swap(arr: MutableList<T>, i: Int, j: Int) {
-    val temp = arr[i]
-    arr[i] = arr[j]
-    arr[j] = temp
+fun <T>MutableList<T>.swap(i: Int, j: Int) {
+    val tmp = this[i] // “this”对应该列表
+    this[i] = this[j]
+    this[j] = tmp
 }

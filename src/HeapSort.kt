@@ -28,7 +28,7 @@ object HeapSort {
         if (arr.size > 2 && arr[1] > arr[2])
             child = 2
         if (arr[0] > arr[child])
-            swap(arr, 0, child)
+            arr.swap(0, child)
         else
             return
         heapify(arr.subList(child, arr.size))

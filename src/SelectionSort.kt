@@ -10,7 +10,7 @@ object SelectionSort {
                     min = j
                 }
             }
-            swap(arr, min, i)
+            arr.swap(min, i)
         }
     }
 }
