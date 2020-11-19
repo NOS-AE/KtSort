@@ -23,7 +23,7 @@ object HeapSort {
     /**
      * 左右子树已成堆，下沉根节点
      */
-    private fun <T : Comparable<T>> heapify(arr: MutableList<T>) {
+    private tailrec fun <T : Comparable<T>> heapify(arr: MutableList<T>) {
         var child = if (arr.size > 1) 1 else return
         if (arr.size > 2 && arr[1] > arr[2])
             child = 2
